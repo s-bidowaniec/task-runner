@@ -1,8 +1,12 @@
 /* Variables */
+
 $light-color: rgb(255, 255, 255);
 $main-color: #FED136;
 $decorative-font: 'Style Script', cursive;
+$title-font: Arial, Helvetica, sans-serif;
+
 /* Global */
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -13,32 +17,58 @@ body {
 .container {
     max-width: 1400px;
 }
+.section-title {
+    margin: 24px auto;
+    text-align: center;
+    h2 {
+        text-transform: uppercase;
+        font-family: $title-font;
+        font-weight: bold;
+    }
+    p {
+        font-style: italic;
+        color: gray;
+    }
+}
+.inner-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* Navigation */
+
 header {
     padding: 24px 0;
 }
 #name {
-    text-align: center;
+    text-align: left;
     margin: 0 0;
     color: $main-color;
     font-family: $decorative-font;
 }
 .navbar-nav {
     list-style-type: none;
+    text-align: right;
     li {
         display: inline-block;
+        margin-right: 36px;
         .nav-link {
             text-decoration: none;
             color: $light-color;
-            margin-right: 36px;
+            
             text-transform: uppercase;
             &:hover {
                 color: $main-color;
             }
         }
+        &:last-of-type {
+            margin-right: 0;
+        }
     }
 }
+
 /* Splash */
+
 .splash-background {
     background-image: url("https://images.pexels.com/photos/403495/pexels-photo-403495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
@@ -69,7 +99,25 @@ header {
         background-color: $main-color;
         text-transform: uppercase;
         border-radius: 5px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $title-font;
         font-weight: bold;
+    }
+}
+
+/* Services */
+
+.services {
+    background-color: #FFFFFF;
+}
+.service {
+    text-align: center;
+    .icon{
+        font-size: 30px;
+        border: solid 4px $main-color;
+        color: $main-color;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        line-height: 55px;
     }
 }

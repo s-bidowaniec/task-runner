@@ -13,13 +13,32 @@ body {
   max-width: 1400px;
 }
 
+.section-title {
+  margin: 24px auto;
+  text-align: center;
+}
+.section-title h2 {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.section-title p {
+  font-style: italic;
+  color: gray;
+}
+
+.inner-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* Navigation */
 header {
   padding: 24px 0;
 }
 
 #name {
-  text-align: center;
+  text-align: left;
   margin: 0 0;
   color: #FED136;
   font-family: "Style Script", cursive;
@@ -27,18 +46,22 @@ header {
 
 .navbar-nav {
   list-style-type: none;
+  text-align: right;
 }
 .navbar-nav li {
   display: inline-block;
+  margin-right: 36px;
 }
 .navbar-nav li .nav-link {
   text-decoration: none;
   color: white;
-  margin-right: 36px;
   text-transform: uppercase;
 }
 .navbar-nav li .nav-link:hover {
   color: #FED136;
+}
+.navbar-nav li:last-of-type {
+  margin-right: 0;
 }
 
 /* Splash */
@@ -79,4 +102,22 @@ header {
   font-weight: bold;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBSUEsV0FBQTtBQUNBO0VBQ0ksc0JBQUE7QUNGSjs7QURJQTtFQUNJLHVCQUFBO0VBQ0EsU0FBQTtBQ0RKOztBREdBO0VBQ0ksaUJBQUE7QUNBSjs7QURFQSxlQUFBO0FBQ0E7RUFDSSxlQUFBO0FDQ0o7O0FEQ0E7RUFDSSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxjQXBCUztFQXFCVCxvQ0FwQmM7QUNzQmxCOztBREFBO0VBQ0kscUJBQUE7QUNHSjtBREZJO0VBQ0kscUJBQUE7QUNJUjtBREhRO0VBQ0kscUJBQUE7RUFDQSxZQTlCRTtFQStCRixrQkFBQTtFQUNBLHlCQUFBO0FDS1o7QURKWTtFQUNJLGNBakNIO0FDdUNiOztBRERBLFdBQUE7QUFDQTtFQUNJLHNJQUFBO0VBQ0EsMkJBQUE7QUNJSjs7QURGQTtFQUNJLGlCQUFBO0VBQ0EsYUFBQTtBQ0tKOztBREhBO0VBQ0ksWUFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFuRFU7QUN5RGQ7QURMSTtFQUNJLFNBQUE7RUFDQSxlQUFBO0VBQ0EseUJBQUE7RUFDQSxnQkFBQTtFQUNBLGdCQUFBO0VBQ0EsbUJBQUE7QUNPUjtBRExJO0VBQ0ksa0JBQUE7QUNPUjtBRExJO0VBQ0ksWUFoRU07RUFpRU4scUJBQUE7RUFDQSxhQUFBO0VBQ0EseUJBbEVLO0VBbUVMLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSx5Q0FBQTtFQUNBLGlCQUFBO0FDT1IiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+/* Services */
+.services {
+  background-color: #FFFFFF;
+}
+
+.service {
+  text-align: center;
+}
+.service .icon {
+  font-size: 30px;
+  border: solid 4px #FED136;
+  color: #FED136;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  line-height: 55px;
+}
+
+/*# sourceMappingURL=style.css.map */
