@@ -146,3 +146,26 @@ header {
         }
     }
 }
+
+/* Footer */
+
+.footer {
+    background-color: #FFFFFF;
+    .icon{
+        font-size: 15px;
+        background-color: black;
+        color: $light-color;
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        line-height: 30px;
+    }
+    p {
+        margin: 20px 0;
+        line-height: 30px;
+    }
+}
+.logos {
+    text-align: center;
+    margin: 20px 0;
+}
