@@ -1,16 +1,24 @@
 /* Variables */
-$light-color: rgb(143, 116, 116);
+$light-color: rgb(255, 255, 255);
 $main-color: #FED136;
 $decorative-font: 'Style Script', cursive;
 /* Global */
 *, *::before, *::after {
     box-sizing: border-box;
   }
+body {
+    background-color: black;
+    margin: 0;
+}
+.container {
+    max-width: 1400px;
+}
 /* Navigation */
 header {
     padding: 24px 0;
 }
 #name {
+    text-align: center;
     margin: 0 0;
     color: $main-color;
     font-family: $decorative-font;
@@ -28,5 +36,40 @@ header {
                 color: $main-color;
             }
         }
+    }
+}
+/* Splash */
+.splash-background {
+    background-image: url("https://images.pexels.com/photos/403495/pexels-photo-403495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center;
+}
+.splash {
+    min-height: 500px;
+    display: flex;
+}
+.splash-inner {
+    margin: auto;
+    text-align: center;
+    color: $light-color;
+    h1 {
+        margin: 0;
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 30px;
+      }
+    h2 {
+        font-style: italic;
+    }
+    .btn {
+        color: $light-color;
+        text-decoration: none;
+        padding: 10px;
+        background-color: $main-color;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
     }
 }
