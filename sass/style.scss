@@ -48,7 +48,8 @@ header {
 }
 .navbar-nav {
     list-style-type: none;
-    text-align: right;
+    text-align: right; 
+    padding-inline-start: 0;
     li {
         display: inline-block;
         margin-right: 36px;
@@ -168,4 +169,33 @@ header {
 .logos {
     text-align: center;
     margin: 20px 0;
+}
+
+
+@media only screen and (max-width: 576px) {
+    /* Header */
+    #name {
+        text-align: center;
+    }
+    .navbar-nav {
+        text-align: center;
+        li {
+            margin-right: 26px;
+        }
+    }
+    /* Footer */
+    .footer {
+        p {
+            text-align: center;
+            margin: 10px 0;
+            line-height: 16px;
+        }
+        .row {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .logos {
+            margin: 10px 0;
+        }
+    }
 }
