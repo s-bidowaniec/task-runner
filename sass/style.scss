@@ -121,3 +121,28 @@ header {
         line-height: 55px;
     }
 }
+
+/* Portfolio */
+
+.portfolio {
+    background-color: #F7F7F7;
+    .card {
+        text-align: center;
+        margin: 16px 0;
+    }
+    .card-img {
+        position: relative;
+        img {
+            object-fit: cover;
+            width: 100%;
+            max-height: 350px;
+        }
+    }
+    .card-title {
+        background-color: #FFFFFF;
+        padding: 16px 0;
+        h3, p {
+            margin: 0;
+        }
+    }
+}
