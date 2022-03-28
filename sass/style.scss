@@ -1,0 +1,32 @@
+/* Variables */
+$light-color: rgb(143, 116, 116);
+$main-color: #FED136;
+$decorative-font: 'Style Script', cursive;
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+/* Navigation */
+header {
+    padding: 24px 0;
+}
+#name {
+    margin: 0 0;
+    color: $main-color;
+    font-family: $decorative-font;
+}
+.navbar-nav {
+    list-style-type: none;
+    li {
+        display: inline-block;
+        .nav-link {
+            text-decoration: none;
+            color: $light-color;
+            margin-right: 36px;
+            text-transform: uppercase;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}
